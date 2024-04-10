@@ -1,0 +1,45 @@
+{
+    "expo": {
+        "name": "Do Simple Mobile App",
+        "slug": "do-simple-application",
+        "privacy": "public",
+        "description": "mobile application created to keep track of tasks Developer: https://github.com/randomoi/",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.appledosimple"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#ffffff"
+            },
+            "package": "com.androiddosimple"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "updates": {
+            "url": "https://u.expo.dev/cf986d81-8ce9-406b-bea4-06b272bd3b0b"
+        },
+        "extra": {
+            "eas": {
+                "projectId": "cf986d81-8ce9-406b-bea4-06b272bd3b0b"
+            }
+        },
+        "runtimeVersion": {
+            "policy": "sdkVersion"
+        }
+    }
+}
