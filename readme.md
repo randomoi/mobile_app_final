@@ -1,64 +1,77 @@
-**Student:** https://github.com/randomoi/
+# DoSimple Mobile Application
 
-**IMPORTANT** Please review "important_files" folder, which contains the following files
+## Table of Contents
+1. [Overview](#overview)
+2. [Iterative Design](#iterative-design)
+3. [Quick Start Guide](#quick-start-guide)
+   - [QR Codes and Links](#qr-codes-and-links)
+   - [Troubleshooting](#troubleshooting)
+4. [Development Notes](#development-notes)
+5. [Running the Application Locally](#running-the-application-locally)
+6. [Camera Feature Limitations](#camera-feature-limitations)
+7. [Running Tests](#running-tests)
+8. [Credits](#credits)
 
-1. project demo
-2. report
-3. expo EAS QR codes 
-4. wireframes
-5. mid-fidelity prototypes 
-6. high-fidelity prototypes
-7. user flow diagram
+### **Overview**
+The DoSimple Mobile Application is designed to enhance productivity with a simple and intuitive interface. 
 
-## LINKS
-
-**Before proceeding, please ensure that you have downloaded the Expo Go app on your mobile device. Without the Expo Go app installed, the QR codes provided below will not function properly. You can find Expo Go on the App Store for iOS devices or the Google Play Store for Android devices. Once you have the app installed, you'll be ready to scan the QR codes and use the application.**
-
-1. [Expo iOS Link](exp://u.expo.dev/update/c7d806e7-bcf9-4296-8a4b-8ef203e1ee80): this link suppose to be opened on iOS device. The link will not work in browser. I've included a QR CODE as well. ![iOS QR Code](./assets/qrcodes/ios_qrcode.png)
-
-2. [Expo Adnroid Link](exp://u.expo.dev/update/c03906f3-3af3-4637-b29d-55af7bcd903f): this link suppose to open on Android device, but I don't have an Adnroid to test it. I've included a QR CODE as well. ![iOS QR Code](./assets/qrcodes/android_qrcode.png)
-
-- **Troubleshooting**: If for any reason clickable links don't work in ***pdf***, please visit ***.md*** file to copy and paste links on iPhone. Since I do not own Android phone, I can’t validate if Android link works. Unfortunately, none of my free testers own an Android. If all fails, please run my application on local environment. Thank you.
+<div style="border: 2px solid black; display: inline-block; padding: 5px;">
+  <a href="https://www.youtube.com/watch?v=IAjaVFTO4FU" target="_blank">
+    <img src="https://img.youtube.com/vi/IAjaVFTO4FU/0.jpg" alt="Demo Video" />
+  </a>
+</div>
 
 
-## DEVELOPMENT
-The project was developed primarily on MacOS, however, camera feature forced me to do some development on friend's Windows computer as "expo-camera" doesn't work on XCode Simulator. 
+### **Iterative Design**
 
-My Mac computer is fairly old and doesn’t have enough processing power to handle Android Studio, therefore, I had to partially work on Windows.
+Please review the contents of the "important_files" folder, which includes the following essential project resources: wireframes, mid-fidelity prototypes, high-fidelity prototypes, and the user flow diagram.
 
-## INSTRUCTIONS ON HOW TO RUN THE APPLICATION IN TERMINAL
-Note that XCode or Android Studio must be installed to run the simulator to display the app.   
+### **Quick Start Guide**
 
-1. navigate to the directory where project was downloaded
-2. navigate to the project files directory
+To get started, ensure you have installed the Expo Go app on your mobile device. Without it, the QR codes will not function. You can download Expo Go from the App Store (iOS) or Google Play Store (Android). Once installed, you can scan the provided QR codes to use the application.
+
+#### QR Codes and Links
+
+- **iOS Users:** Open this [Expo iOS link](exp://u.expo.dev/update/c7d806e7-bcf9-4296-8a4b-8ef203e1ee80) on your iOS device. If you prefer, you can scan this QR code: ![iOS QR Code](./assets/qrcodes/ios_qrcode.png)
+
+- **Android Users:** Open this [Expo Adnroid link](exp://u.expo.dev/update/c03906f3-3af3-4637-b29d-55af7bcd903f) on your Android device, or use the QR code below: ![iOS QR Code](./assets/qrcodes/android_qrcode.png)
+
+### **Troubleshooting**
+If the clickable links do not work in a PDF format, refer to the Markdown file to copy and paste the links into your mobile browser. As the author does not have access to an Android device, the Android link has not been tested. If you encounter any issues, you can run the application locally.
+
+### **Development Notes**
+
+The project was primarily developed on macOS, but due to constraints with the "expo-camera" package, some development took place on a Windows environment. The original development environment lacked the resources to run Android Studio, hence the need for external assistance.
+
+### **Running the Application Locally**
+
+To run the application in a terminal, you need XCode or Android Studio installed to use the appropriate simulator/emulator. Follow these steps to run the application:
+
+
+1. navigate to the project directory
 
         cd [XXX]
 
-3. navigate to the app project directory
-
-        cd [XXX]
-
-4. install node_modules (npm --version = 9.7.2)
+2. install node_modules (npm --version = 9.7.2)
 
         npm install
 
-5. start expo by running the following command
+3. start expo by running the following command
 
         npx expo start
 
-6. select "i" to run XCode simulator or "a" to run in Android Studio emulator
+4. select "i" to run XCode simulator or "a" to run in Android Studio emulator
 
-### **IMPORTANT:** XCode simulator will not work for camera feature. 
+### **Camera Feature Limitations**
+Note that the camera feature does not work on the XCode simulator. For more information, please refer to the [Expo documentation](https://docs.expo.dev/workflow/ios-simulator/).
 
-Please see [expo documentation](https://docs.expo.dev/workflow/ios-simulator/).
+### **Running Tests**
 
-## INSTRUCTIONS ON HOW TO RUN TESTS
-
-To run all tests, please run following command.
+To execute all tests, use the command below:
 
         npx jest tests
 
-To run individual tests, please run following commands.
+To execute individual tests, use commands below:
 
         npx jest tests/HeaderAppIcon.test.js
 
@@ -66,9 +79,9 @@ To run individual tests, please run following commands.
 
         npx jest tests/SuccessAlert.test.js
 
-## CREDITS
+### **Credits**
 1. [Logo Credit](https://www.freepik.com/free-vector/initial-letter-b-check-mark-logo-ideas-inspiration-logo-design-template-vector-illustration-isolated-white-background_21003339.htm#query=to%20do%20logo&position=1&from_view=search&track=ais)
 2. [Emoji Party Face Credit](https://emojipedia.org/partying-face)
 3. [Emoji Nerd Face Credit](https://emojipedia.org/nerd-face)
 
-
+*Author: https://github.com/randomoi/*
